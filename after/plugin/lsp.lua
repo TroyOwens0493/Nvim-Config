@@ -14,7 +14,8 @@ require('mason-lspconfig').setup({
 	'pylsp',
 	'gopls',
 	'html',
-	'cssls'
+	'cssls',
+    "clangd"
 	},
   handlers = {
     function(server_name)
