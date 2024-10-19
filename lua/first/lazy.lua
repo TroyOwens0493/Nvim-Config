@@ -26,7 +26,7 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
     spec = {
         -- Telescope
-        { 'nvim-telescope/telescope.nvim', config = true },
+        { 'nvim-telescope/telescope.nvim', config = true, tag = '0.1.8' },
 
         -- Colorschemes
         { "rose-pine/neovim",              name = "rose-pine" },
