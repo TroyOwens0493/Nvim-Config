@@ -61,6 +61,12 @@ require('mason-lspconfig').setup({
     }
 })
 
+require('lspconfig').sourcekit.setup({ --Setup apple dev lsp manually
+    capabilities = lsp_capabilities,
+    filetypes = { 'swift', 'objective-c', 'objective-cpp' }, -- Supported file types
+    cmd = { 'xcrun', 'sourcekit-lsp' }, -- Command to start sourcekit-lsp
+})
+
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
